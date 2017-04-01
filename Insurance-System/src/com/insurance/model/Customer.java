@@ -10,14 +10,16 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name = "customer")
 public class Customer {
 
 
 	@Id
-	@Column
-
+	@GenericGenerator(name="customUUID",strategy="uuid2")
+	@GeneratedValue(generator="customUUID")
 	private String  customer_code; 
 	@Column
 	private String login_id; 
@@ -29,7 +31,7 @@ public class Customer {
 	private String address; 
 	@Column
 	private String phone; 
-	@Column
+	@Column(unique=true)
 	private String email_id; 
 	@Column
 	private String password;
