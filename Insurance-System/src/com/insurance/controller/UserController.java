@@ -23,7 +23,7 @@ public class UserController extends HttpServlet{
 		
 		String loginId=req.getParameter("loginID");
 		String name=req.getParameter("uName");
-		String dateOfBirth=req.getParameter("datBirth");
+		String dateOfBirth=req.getParameter("dateBirth");
 		String pass=req.getParameter("password1");
 		String address=req.getParameter("address");
 		String gender=req.getParameter("gender");
