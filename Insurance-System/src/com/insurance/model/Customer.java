@@ -215,7 +215,30 @@ public class Customer {
 	public void setPolicies(Set<Policy> policies) {
 		this.policies = policies;
 	}
-
+	public Customer(String login_id, String name, String date_of_birth,
+			String address, String phone, String email_id, String password,
+			String gender, String country, String state, String city,
+			String pincode) {
+		super();
+		this.login_id = login_id;
+		this.name = name;
+		this.date_of_birth = date_of_birth;
+		this.address = address;
+		this.phone = phone;
+		this.email_id = email_id;
+		this.password = password;
+		this.gender = gender;
+		this.country = country;
+		this.state = state;
+		this.city = city;
+		this.pincode = pincode;
+		
+	}
+	public Customer(){
+		
+	}
+	
+	
 
 
 }
