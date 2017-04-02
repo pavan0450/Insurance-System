@@ -4,14 +4,15 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
-    <description></description>
-    <display-name>Testtables</display-name>
-    <servlet-name>Testtables</servlet-name>
-    <servlet-class>com.insurance.model.Testtables</servlet-class>
+  	<servlet-name>registerUser</servlet-name>
+  	<servlet-class>com.insurance.controller.UserController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Testtables</servlet-name>
-    <url-pattern>/Testtables</url-pattern>
+  	<servlet-name>registerUser</servlet-name>
+  	<url-pattern> /registerUser </url-pattern>
   </servlet-mapping>
+
+
 </web-app>
