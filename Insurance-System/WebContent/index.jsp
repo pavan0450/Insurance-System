@@ -37,6 +37,7 @@ a{
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="login.jsp">Login</a></li>
+			<li><a href="register.jsp">Register</a></li>
 			<li><a href="#">About</a></li>
 		</ul>
 		</nav>
